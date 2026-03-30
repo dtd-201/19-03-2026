@@ -2,7 +2,7 @@ import { Button, Checkbox, Form, Input, message } from "antd";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
 const FormLogin = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const onFinish = async (values) => {
     try {
       const response = await api.post("/user/login", values);
