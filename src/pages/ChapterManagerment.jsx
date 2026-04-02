@@ -25,6 +25,7 @@ function ChapterManagement() {
   const [editId, setEditId] = useState(null);
 
   const [page, setPage] = useState(1);
+  // tạo thêm 1 state limit để quản lí
   const [total, setTotal] = useState(0);
 
   const getChapter = async (currentPage = 1) => {

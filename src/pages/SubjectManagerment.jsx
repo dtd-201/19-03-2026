@@ -89,7 +89,7 @@ function SubjectManagerment() {
     try {
       await api.delete(`/subject/${id}`);
       message.success("Xóa môn học thành công");
-      getSubject(page); // 👉 reload đúng trang
+      getSubject(page);
     } catch (error) {
       message.error("Xóa thất bại!");
     }

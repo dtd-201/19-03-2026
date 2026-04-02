@@ -2,6 +2,7 @@ import { Layout, Avatar, Space, Dropdown } from "antd";
 import { useEffect, useState } from "react";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
+import "../csscomponents/profile.css";
 
 const { Header } = Layout;
 
@@ -46,7 +47,6 @@ const AppHeader = () => {
         boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
       }}
     >
-      {/* LOGO + AVATAR */}
       <Space size="middle">
         <Avatar
           style={{
@@ -62,7 +62,6 @@ const AppHeader = () => {
         </span>
       </Space>
 
-      {/* USER */}
       <Dropdown menu={{ items, onClick: handleMenuClick }}>
         <a onClick={(e) => e.preventDefault()}>
           <Space>
